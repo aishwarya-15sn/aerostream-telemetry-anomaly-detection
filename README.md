@@ -23,6 +23,19 @@ The system processes the following flight parameters:
 
 These parameters represent simplified aircraft telemetry signals that are commonly monitored in flight systems.
 
+## Dataset
+
+The project generates synthetic aircraft telemetry data using NumPy random distributions.
+
+The generated dataset contains:
+- Altitude
+- Velocity
+- Temperature
+- Latitude
+- Longitude
+
+A small number of abnormal telemetry readings are intentionally injected to simulate anomalous aircraft behaviour for testing the anomaly detection pipeline.
+
 ## Architecture
 Telemetry Generator  
 ↓  
@@ -61,6 +74,14 @@ The system identifies abnormal telemetry readings and visualizes them in a plot:
 
 Blue → Normal telemetry behaviour  
 Red → Detected anomalies
+
+## Sample Detected Anomalies
+
+The system successfully identifies intentionally injected abnormal telemetry readings such as:
+- Extremely high altitude values
+- Unusual aircraft velocity readings
+
+Detected anomalies are highlighted in red in the visualization output.
 
 ## Future Improvements
 - Real-time telemetry stream ingestion
