@@ -66,7 +66,7 @@ pip install -r requirements.txt
 Run the telemetry monitoring pipeline:
 
 
-python src/run_pipeline.py
+python run_pipeline.py
 
 
 ## Output
