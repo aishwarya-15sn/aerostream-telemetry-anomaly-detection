@@ -1,4 +1,4 @@
-# Flight Telemetry Monitoring System
+# AeroStream – Aerospace Telemetry Monitoring \& Anomaly Detection System
 
 A Python-based telemetry monitoring pipeline that simulates aircraft flight data and detects abnormal flight behaviour using anomaly detection techniques.
 
