@@ -4,34 +4,20 @@ AeroStream is a telemetry analytics platform that simulates aircraft sensor data
 
 ## Overview
 
-Modern aircraft generate large volumes of telemetry data from onboard sensors. Monitoring these signals is critical for identifying abnormal behaviour, detecting potential system failures, and supporting operational decision-making.
-
-AeroStream implements an end-to-end telemetry analytics pipeline that processes simulated aircraft telemetry data and applies machine learning techniques to detect anomalous flight conditions.
+AeroStream is an end-to-end telemetry analytics pipeline that generates and processes simulated aircraft sensor data to detect anomalous operating conditions using machine learning techniques.
 
 ## Key Features
 
-* Synthetic aircraft telemetry generation
-* Telemetry data preprocessing and analysis
-* Anomaly detection using Isolation Forest
-* Flight parameter monitoring and visualization
-* Detection of abnormal aircraft operating conditions
-* Telemetry trend analysis through interactive plots
-
-## Telemetry Parameters
-
-The system analyzes multiple aircraft telemetry signals, including:
-
-* Altitude
-* Velocity
-* Temperature
-* Latitude
-* Longitude
-
-These parameters represent common telemetry measurements used for flight monitoring and operational analysis.
+* Synthetic telemetry data generation
+* Telemetry preprocessing and analysis
+* Isolation Forest-based anomaly detection
+* Telemetry visualization and trend analysis
+* Anomaly statistics and reporting
+* CSV export of detected anomalies
 
 ## Technical Approach
 
-AeroStream generates simulated telemetry streams, processes sensor measurements, and applies the Isolation Forest anomaly detection algorithm to identify unusual patterns in aircraft behaviour. Detected anomalies are highlighted through data visualizations, enabling efficient monitoring and analysis.
+The pipeline generates synthetic telemetry data, preprocesses sensor measurements, applies Isolation Forest for anomaly detection, and visualizes anomalous patterns through statistical reports and plots.
 
 ## Technologies Used
 
@@ -65,13 +51,6 @@ python run_pipeline.py
 ```
 
 ## Sample Output
-
-The system identifies abnormal telemetry readings and visualizes detected anomalies.
-
-* Normal telemetry behaviour
-* Anomalous telemetry behaviour
-* Flight trend visualization
-* Sensor pattern analysis
 
 ![Telemetry Output](assets/telemetry_output.png)
 
